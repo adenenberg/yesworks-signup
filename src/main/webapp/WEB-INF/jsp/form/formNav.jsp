@@ -5,12 +5,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#">Personal Information</a></li>
-					<li class="disabled"><a href="#">Address</a></li>
-					<li class="disabled"><a href="#">Education</a></li>
-					<li class="disabled"><a href="#">Background</a></li>
-					<li class="disabled"><a href="#">Employment Information</a></li>
-					<li class="disabled"><a href="#">Release and Signature</a></li>
+					<li><a href="/form/start">Personal Information</a></li>
+					<li><a href="/form/address">Address</a></li>
+					<li><a href="#">Education</a></li>
+					<li><a href="#">Background</a></li>
+					<li><a href="#">Employment Information</a></li>
+					<li><a href="#">Release and Signature</a></li>
 				</ul>
 			</div>
 		</div>

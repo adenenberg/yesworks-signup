@@ -4,6 +4,8 @@
 <script type='text/javascript' src='/resources/js/bootstrap.js'></script>
 <script type='text/javascript' src='/resources/js/bootstrap-datepicker.js'></script>
 
+<script type='text/javascript' src='/resources/js/global.js'></script>
+
 <script type="text/javascript">	
 	var $j = jQuery.noConflict();
 </script>
