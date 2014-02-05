@@ -3,6 +3,13 @@
 <div id="personalInfo">	
 	<div class="row">
 		<div class="col-md-12">
+			<div class="page-header">
+				<h3>Personal Information</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
 			<form class="" role="form" method="POST" action="/form/start"> <!-- has-success has-feedback -->
 				<div class="row">
 					<div class="col-md-4">
@@ -100,10 +107,10 @@
 				</div>
 				<div class="row">
 					<div class="col-md-offset-4 col-md-1">
-						<button class="btn btn-warning">Back</button>
+						<button id="backBtn" class="btn btn-warning">Back</button>
 					</div>
 					<div class="col-md-offset-2 col-md-1">
-						<button type="submit" class="btn btn-success">Submit</button>
+						<button type="submit" class="btn btn-success" data-loading-text="Loading...">Submit</button>
 					</div>
 				</div>
 			</form>

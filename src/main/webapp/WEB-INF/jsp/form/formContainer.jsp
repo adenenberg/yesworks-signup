@@ -18,6 +18,18 @@
 					startView: 2,
 					autoclose: true
 				});
+				
+				$j("form").on("click", "button[type='submit']", function(e) {
+					$j(this).button('loading');
+					$j("#backBtn").addClass("disabled");
+				});
+				
+				$j("#formTabs").on("click", "a", function(e) {
+					if($j(this).parent("li").hasClass("disabled")) {
+						e.preventDefault();
+					}
+				});
+				
 			});
 		</script>
 		
@@ -37,7 +49,7 @@
 					<%@ include file="/WEB-INF/jsp/form/content/personalInfo.jsp"%>
 				</c:when>
 				<c:when test="${step eq 2}">
-				
+					<%@ include file="/WEB-INF/jsp/form/content/addressInfo.jsp"%>
 				</c:when>
 				<c:when test="${step eq 3}">
 				

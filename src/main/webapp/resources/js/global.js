@@ -12,3 +12,11 @@ function updateFormTabs(currentStep, maxStep) {
 		}
 	});
 }
+
+function fillPermanentAddress(address1, address2, city, state, zipCode) {
+	$j("#permanentAddress1").val(address1);
+	$j("#permanentAddress2").val(address2);
+	$j("#permanentCity").val(city);
+	$j("#permanentState").val(state);
+	$j("#permanentZipCode").val(zipCode);
+}

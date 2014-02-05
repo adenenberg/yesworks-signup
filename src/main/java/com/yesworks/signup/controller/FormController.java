@@ -31,8 +31,25 @@ public class FormController {
 	@RequestMapping(value = "/address", method = RequestMethod.GET)
 	public String getAddressInformation(Model model) {
 		
-		model.addAttribute("step", "2");
+		model.addAttribute("step", 2);
 		setMaxStep(model, 2);
+		
+		return "/jsp/form/formContainer";
+	}
+	
+	@RequestMapping(value = "/address", method = RequestMethod.POST)
+	public String saveAddressInformation(Model model) {
+		
+		setMaxStep(model, 2);
+		
+		return "redirect:/form/education";
+	}
+	
+	@RequestMapping(value = "/education", method = RequestMethod.GET)
+	public String getEducationInformation(Model model) {
+		
+		model.addAttribute("step", 3);
+		setMaxStep(model, 3);
 		
 		return "/jsp/form/formContainer";
 	}
