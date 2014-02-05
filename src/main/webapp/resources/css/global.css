@@ -1,3 +1,7 @@
 #formTabs {
 	margin-bottom: -20px;
 }
+
+form label {
+	font-weight: bold;
+}

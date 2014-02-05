@@ -52,7 +52,7 @@
 					<%@ include file="/WEB-INF/jsp/form/content/addressInfo.jsp"%>
 				</c:when>
 				<c:when test="${step eq 3}">
-				
+					<%@ include file="/WEB-INF/jsp/form/content/educationInfo.jsp"%>
 				</c:when>
 				<c:when test="${step eq 4}">
 				
