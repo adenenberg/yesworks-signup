@@ -55,10 +55,10 @@
 					<%@ include file="/WEB-INF/jsp/form/content/educationInfo.jsp"%>
 				</c:when>
 				<c:when test="${step eq 4}">
-				
+					<%@ include file="/WEB-INF/jsp/form/content/backgroundInfo.jsp"%>
 				</c:when>
 				<c:when test="${step eq 5}">
-				
+					<%@ include file="/WEB-INF/jsp/form/content/employmentInfo.jsp"%>
 				</c:when>
 				<c:otherwise>
 				

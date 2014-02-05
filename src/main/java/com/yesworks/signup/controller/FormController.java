@@ -54,6 +54,65 @@ public class FormController {
 		return "/jsp/form/formContainer";
 	}
 	
+	@RequestMapping(value = "/education", method = RequestMethod.POST)
+	public String saveEducationInformation(Model model) {
+		
+		setMaxStep(model, 3);
+		
+		return "redirect:/form/background";
+	}
+	
+	@RequestMapping(value = "/background", method = RequestMethod.GET)
+	public String getBackgroundInformation(Model model) {
+		
+		model.addAttribute("step", 4);
+		setMaxStep(model, 4);
+		
+		return "/jsp/form/formContainer";
+	}
+	
+	@RequestMapping(value = "/background", method = RequestMethod.POST)
+	public String saveBackgroundInformation(Model model) {
+		
+		setMaxStep(model, 4);
+		
+		return "redirect:/form/employment";
+	}
+	
+	@RequestMapping(value = "/employment", method = RequestMethod.GET)
+	public String getEmploymentInformation(Model model) {
+		
+		model.addAttribute("step", 5);
+		setMaxStep(model, 5);
+		
+		return "/jsp/form/formContainer";
+	}
+	
+	@RequestMapping(value = "/employment", method = RequestMethod.POST)
+	public String saveEmploymentInformation(Model model) {
+		
+		setMaxStep(model, 5);
+		
+		return "redirect:/form/release";
+	}
+	
+	@RequestMapping(value = "/release", method = RequestMethod.GET)
+	public String getReleaseInformation(Model model) {
+		
+		model.addAttribute("step", 6);
+		setMaxStep(model, 6);
+		
+		return "/jsp/form/formContainer";
+	}
+	
+	@RequestMapping(value = "/release", method = RequestMethod.POST)
+	public String saveReleaseInformation(Model model) {
+		
+		setMaxStep(model, 6);
+		
+		return "redirect:/form/finish";
+	}
+	
 	private void setMaxStep(Model model, int currentStep) {
 		Object maxStep = model.asMap().get("maxStep");
 		
