@@ -13,12 +13,6 @@
 				
 				updateFormTabs(${step}, ${maxStep});
 				
-				$j("#birthDate").datepicker({
-					startDate: "-30y",
-					startView: 2,
-					autoclose: true
-				});
-				
 				$j("form").on("click", "button[type='submit']", function(e) {
 					$j(this).button('loading');
 					$j("#backBtn").addClass("disabled");

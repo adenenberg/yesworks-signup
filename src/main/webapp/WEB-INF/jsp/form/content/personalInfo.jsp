@@ -117,3 +117,11 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$j(document).ready(function() {
+		$j("#birthDate").datetimepicker({
+			pickTime: false,
+			viewMode: 'years'
+		});
+	});
+</script>

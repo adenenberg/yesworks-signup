@@ -266,13 +266,6 @@
 
 <script type="text/javascript">
 	$j(document).ready(function() {
-		$j("#addressInfo form").on("click", "#currentSameAsPermanent", function(e) {
-			if($j(this).is(":checked")) {
-				fillPermanentAddress($j("#currentAddress1").val(), $j("#currentAddress2").val(), $j("#currentCity").val(), $j("#currentState").val(), $j("#currentZipCode").val());
-			}
-			else {
-				fillPermanentAddress("", "", "", "", "");
-			}
-		});
+
 	});
 </script>
