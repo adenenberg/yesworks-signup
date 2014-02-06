@@ -1,7 +1,18 @@
+/* Global CSS */
+
 #formTabs {
 	margin-bottom: -20px;
 }
 
 form label {
 	font-weight: bold;
+	font-size: 14px;
+}
+
+.radio label, .checkbox label {
+	font-size: 12px;
+} 
+
+#weeklyHours .col-md-1 {
+	width: 14.267777777777%;
 }

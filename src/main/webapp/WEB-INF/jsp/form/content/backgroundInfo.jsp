@@ -31,7 +31,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label for="race">Race</label>
+							<label for="race">Race</label>&nbsp;&nbsp;&nbsp;<small class="text-warning">Check all that apply</small>
 							<div class="checkbox">
 								<label>
 									<input type="checkbox" name="race" id="race1" value="1">

@@ -20,3 +20,11 @@ function fillPermanentAddress(address1, address2, city, state, zipCode) {
 	$j("#permanentState").val(state);
 	$j("#permanentZipCode").val(zipCode);
 }
+
+function setupTimePicker(field) {
+	$j(field).datetimepicker({
+		pickDate: false,
+		minuteStepping: 10,
+		defaultDate: moment().startOf("day")
+	});
+}
