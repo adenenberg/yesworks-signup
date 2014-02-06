@@ -107,7 +107,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-offset-4 col-md-1">
-						<button id="backBtn" class="btn btn-warning">Back</button>
+						<a href="#" id="backBtn" class="btn btn-warning disabled">Back</a>
 					</div>
 					<div class="col-md-offset-2 col-md-1">
 						<button type="submit" class="btn btn-success" data-loading-text="Loading...">Submit</button>

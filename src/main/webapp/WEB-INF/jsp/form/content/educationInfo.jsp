@@ -75,7 +75,7 @@
 										<div class="col-md-12">
 											<div class="radio">
 												<label>
-													<input type="radio" name="educationalAttainment" id="educationalAttainment2" value="diplomaEarned" checked>
+													<input type="radio" name="educationalAttainment" id="educationalAttainment2" value="diplomaEarned">
 													HS Diploma Earned
 												</label>
 											</div>
@@ -85,7 +85,7 @@
 										<div class="col-md-12">
 											<div class="radio">
 												<label>
-													<input type="radio" name="educationalAttainment" id="educationalAttainment3" value="none" checked>
+													<input type="radio" name="educationalAttainment" id="educationalAttainment3" value="none">
 													None
 												</label>
 											</div>
@@ -107,7 +107,7 @@
 										<div class="col-md-12">
 											<div class="radio">
 												<label>
-													<input type="radio" name="educationalAttainment" id="educationalAttainment5" value="associatesInProgress" checked>
+													<input type="radio" name="educationalAttainment" id="educationalAttainment5" value="associatesInProgress">
 													Associate's In Progress
 												</label>
 											</div>
@@ -117,7 +117,7 @@
 										<div class="col-md-12">
 											<div class="radio">
 												<label>
-													<input type="radio" name="educationalAttainment" id="educationalAttainment6" value="associatesEarned" checked>
+													<input type="radio" name="educationalAttainment" id="educationalAttainment6" value="associatesEarned">
 													Associate's Earned
 												</label>
 											</div>
@@ -139,7 +139,7 @@
 										<div class="col-md-12">
 											<div class="radio">
 												<label>
-													<input type="radio" name="educationalAttainment" id="educationalAttainment8" value="other" checked>
+													<input type="radio" name="educationalAttainment" id="educationalAttainment8" value="other">
 													Other: blah
 												</label>
 											</div>
@@ -152,7 +152,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-offset-4 col-md-1">
-						<button id="backBtn" class="btn btn-warning">Back</button>
+						<a href="/form/address" id="backBtn" class="btn btn-warning">Back</a>
 					</div>
 					<div class="col-md-offset-2 col-md-1">
 						<button type="submit" class="btn btn-success" data-loading-text="Loading...">Submit</button>

@@ -8,8 +8,8 @@
 					<li><a href="/form/start">Personal Information</a></li>
 					<li><a href="/form/address">Address</a></li>
 					<li><a href="/form/education">Education</a></li>
-					<li><a href="#">Background</a></li>
-					<li><a href="#">Employment Information</a></li>
+					<li><a href="/form/background">Background</a></li>
+					<li><a href="/form/employment">Employment Information</a></li>
 					<li><a href="#">Release and Signature</a></li>
 				</ul>
 			</div>
