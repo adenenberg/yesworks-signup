@@ -1,16 +1,25 @@
 package com.yesworks.signup.controller;
 
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+
+import com.yesworks.signup.domain.Youth;
+import com.yesworks.signup.service.YouthService;
 
 @Controller
 @RequestMapping("/form")
 @SessionAttributes("maxStep")
 public class FormController {
 
+	@Resource
+	private YouthService youthService;
+	
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
 	public String getPersonalInformation(Model model) {
 		
@@ -21,7 +30,9 @@ public class FormController {
 	}
 	
 	@RequestMapping(value = "/start", method = RequestMethod.POST)
-	public String savePersonalInformation(Model model) {
+	public String savePersonalInformation(Youth youth, Model model) {
+		System.out.println("Name = " + youth.getFirstName());
+		youthService.save(youth);
 		
 		setMaxStep(model, 1);
 		

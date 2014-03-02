@@ -26,7 +26,7 @@
 		<beans:property name="password" value="${jdbc.password}"/>
 	</beans:bean>
 
-	<beans:bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+<!-- 	<beans:bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="annotatedClasses">
 			<beans:list>
@@ -41,10 +41,18 @@
 				<beans:prop key="hibernate.hbm2ddl.auto">update</beans:prop>
 			</beans:props>
 		</beans:property>
+	</beans:bean> -->
+	
+	<beans:bean id="yesworksEntityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<beans:property name="dataSource" ref="dataSource"/>
+		<!-- <beans:property name="persistenceUnitName" value="yesworksPU" /> -->
+		<beans:property name="jpaVendorAdapter">
+			<beans:bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+		</beans:property>
 	</beans:bean>
 
-	<beans:bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-		<beans:property name="sessionFactory" ref="sessionFactory" />
+	<beans:bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<beans:property name="entityManagerFactory" ref="yesworksEntityManagerFactory" />
 	</beans:bean>
 
 </beans:beans>

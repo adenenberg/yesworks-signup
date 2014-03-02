@@ -10,24 +10,24 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<form class="" role="form" method="POST" action="/form/start"> <!-- has-success has-feedback -->
+			<form class="" role="form" name="youth" method="POST" action="/form/start"> <!-- has-success has-feedback -->
 				<div class="row">
 					<div class="col-md-4">
 						<div class="form-group">
 							<label for="firstName">First Name</label>
-							<input type="text" class="form-control" id="firstName" placeholder="First Name">
+							<input name="firstName" type="text" class="form-control" id="firstName" placeholder="First Name">
 						</div>
 					</div>
 					<div class="col-md-2">
 						<div class="form-group">
 							<label for="middleInitial">Middle Initial</label>
-							<input type="text" class="form-control" id="middleInitial" placeholder="M.I.">
+							<input name="middleInitial" type="text" class="form-control" id="middleInitial" placeholder="M.I.">
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="lastName">Last Name</label>
-							<input type="text" class="form-control" id="lastName" placeholder="Last Name">
+							<input name="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name">
 						</div>
 					</div>
 				</div>
@@ -35,19 +35,19 @@
 					<div class="col-md-1">
 						<div class="form-group">
 							<label for="age">Age</label>
-							<input type="text" class="form-control" id="age" placeholder="age">
+							<input name="age" type="text" class="form-control" id="age" placeholder="age">
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="form-group">
 							<label for="birthDate">Date of Birth</label>
-							<input type="text" class="form-control" id="birthDate" placeholder="MM/DD/YYYY">
+							<input name="birthDate" type="text" class="form-control" id="birthDate" placeholder="MM/DD/YYYY">
 						</div>
 					</div>
 					<div class="col-md-4">	
 						<div class="form-group">
 							<label for="socialNumber">Last 4 Digits of Social Security #</label>
-							<input type="text" class="form-control" id="socialNumber" placeholder="XXXX">
+							<input name="lastFourSocial" type="text" class="form-control" id="socialNumber" placeholder="XXXX">
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -57,7 +57,7 @@
 								<div class="col-md-3">
 									<div class="radio">
 										<label>
-											<input type="radio" name="gender" id="gender1" value="male" checked>
+											<input type="radio" name="gender" id="gender1" value="MALE" checked>
 											Male
 										</label>
 									</div>
@@ -65,7 +65,7 @@
 								<div class="col-md-3">
 									<div class="radio">
 										<label>
-											<input type="radio" name="gender" id="gender2" value="female">
+											<input type="radio" name="gender" id="gender2" value="FEMALE">
 											Female
 										</label>
 									</div>
@@ -82,7 +82,7 @@
 								<div class="col-md-3">
 									<div class="radio">
 										<label>
-											<input type="radio" name="maritalStatus" id="maritalStatus1" value="single" checked>
+											<input type="radio" name="maritalStatus" id="maritalStatus1" value="SINGLE" checked>
 											Single
 										</label>
 									</div>
@@ -90,7 +90,7 @@
 								<div class="col-md-3">
 									<div class="radio">
 										<label>
-											<input type="radio" name="maritalStatus" id="maritalStatus2" value="married">
+											<input type="radio" name="maritalStatus" id="maritalStatus2" value="MARRIED">
 											Married
 										</label>
 									</div>
@@ -101,7 +101,7 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="children">Number of Children</label>
-							<input type="text" class="form-control" id="children" placeholder="">
+							<input name="numberOfChildren" type="text" class="form-control" id="children" placeholder="">
 						</div>
 					</div>
 				</div>

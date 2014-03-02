@@ -10,6 +10,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -32,6 +34,7 @@ public class Youth implements Serializable {
 	
 	@Id
 	@Column(name = "YOUTH_ID")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name = "FIRST_NAME")
@@ -57,6 +60,7 @@ public class Youth implements Serializable {
 	private int numberOfChildren;
 	
 	@Column(name = "GENDER")
+	@Enumerated(EnumType.STRING)
 	private Gender gender;
 	
 	@Column(name = "HOME_PHONE")
