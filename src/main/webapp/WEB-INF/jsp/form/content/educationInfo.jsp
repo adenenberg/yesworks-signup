@@ -15,7 +15,7 @@
 					<div class="col-md-8">
 						<div class="form-group">
 							<label for="schoolName">Current or Most Recent School</label>
-							<input type="text" class="form-control" id="schoolName" placeholder="University of California, Berkley">
+							<input name="schoolName" type="text" class="form-control" id="schoolName" placeholder="University of California, Berkley">
 						</div>
 					</div>
 				</div>
@@ -27,7 +27,7 @@
 								<div class="col-md-3">
 									<div class="radio">
 										<label>
-											<input type="radio" name="schoolType" id="schoolType1" value="college" checked>
+											<input type="radio" name="schoolType" id="schoolType1" value="COLLEGE" checked>
 											College
 										</label>
 									</div>
@@ -35,7 +35,7 @@
 								<div class="col-md-3">
 									<div class="radio">
 										<label>
-											<input type="radio" name="schoolType" id="schoolType2" value="highSchool">
+											<input type="radio" name="schoolType" id="schoolType2" value="HIGH_SCHOOL">
 											High School
 										</label>
 									</div>
@@ -46,7 +46,7 @@
 					<div class="col-md-4">
 						<div class="form-group">
 							<label for="schoolYearsCompleted">Years Completed</label>
-							<select class="form-control" id="schoolYearsCompleted">
+							<select name="schoolYearsCompleted" class="form-control" id="schoolYearsCompleted">
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>

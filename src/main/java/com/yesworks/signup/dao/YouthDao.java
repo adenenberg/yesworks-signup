@@ -16,6 +16,11 @@ public class YouthDao {
 	private EntityManager em;
 	
 	public void save(Youth youth) {
-		em.persist(youth);
+		if(em.contains(youth)) {
+			em.merge(youth);
+		}
+		else {
+			em.persist(youth);
+		}
 	}
 }

@@ -13,7 +13,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -49,9 +51,6 @@ public class Youth implements Serializable {
 	@Column(name = "LAST_FOUR_SOCIAL")
 	private String lastFourSocial;
 	
-	@OneToMany(mappedBy = "youth", targetEntity = Address.class, cascade = CascadeType.ALL)
-	private List<Address> addresses = new ArrayList<Address>();
-	
 	@Column(name = "MARITAL_STATUS")
 	@Enumerated(EnumType.STRING)
 	private MaritalStatus maritalStatus;
@@ -63,17 +62,26 @@ public class Youth implements Serializable {
 	@Enumerated(EnumType.STRING)
 	private Gender gender;
 	
-	@Column(name = "HOME_PHONE")
-	private String homePhone;
-	
-	@Column(name = "CELL_PHONE")
-	private String cellPhone;
-	
 	@Column(name = "BIRTH_DATE")
 	private Date birthDate;
 	
 	@Column(name = "AGE")
 	private int age;
+	
+	@OneToOne(mappedBy = "youth", targetEntity = Address.class, cascade = CascadeType.ALL)
+	private Address address;
+	
+	@OneToOne(mappedBy = "youth", targetEntity = Education.class, cascade = CascadeType.ALL)
+	@JoinColumn(name = "YOUTH_ID")
+	private Education education;
+	
+	@OneToOne(mappedBy = "youth", targetEntity = Background.class, cascade = CascadeType.ALL)
+	@JoinColumn(name = "YOUTH_ID")
+	private Background background;
+	
+	@OneToOne(mappedBy = "youth", targetEntity = Employment.class, cascade = CascadeType.ALL)
+	@JoinColumn(name = "YOUTH_ID")
+	private Employment employment;
 
 	public Long getId() {
 		return id;
@@ -115,12 +123,12 @@ public class Youth implements Serializable {
 		this.lastFourSocial = lastFourSocial;
 	}
 
-	public List<Address> getAddresses() {
-		return addresses;
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public MaritalStatus getMaritalStatus() {
@@ -147,22 +155,6 @@ public class Youth implements Serializable {
 		this.gender = gender;
 	}
 
-	public String getHomePhone() {
-		return homePhone;
-	}
-
-	public void setHomePhone(String homePhone) {
-		this.homePhone = homePhone;
-	}
-
-	public String getCellPhone() {
-		return cellPhone;
-	}
-
-	public void setCellPhone(String cellPhone) {
-		this.cellPhone = cellPhone;
-	}
-
 	public Date getBirthDate() {
 		return birthDate;
 	}
@@ -177,6 +169,30 @@ public class Youth implements Serializable {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public Education getEducation() {
+		return education;
+	}
+
+	public void setEducation(Education education) {
+		this.education = education;
+	}
+
+	public Background getBackground() {
+		return background;
+	}
+
+	public void setBackground(Background background) {
+		this.background = background;
+	}
+
+	public Employment getEmployment() {
+		return employment;
+	}
+
+	public void setEmployment(Employment employment) {
+		this.employment = employment;
 	}
 	
 }

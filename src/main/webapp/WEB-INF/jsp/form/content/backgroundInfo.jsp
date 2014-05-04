@@ -17,13 +17,13 @@
 							<label for="ethnicity">Ethnicity</label>
 							<div class="radio">
 								<label>
-									<input type="radio" name="ethnicity" id="ethnicity1" value="true" checked>
+									<input type="radio" name="isHispanic" id="ethnicity1" value="true" checked>
 									I am Hispanic/Latino
 								</label>
 							</div>
 							<div class="radio">
 								<label>
-									<input type="radio" name="ethnicity" id="ethnicity2" value="false">
+									<input type="radio" name="isHispanic" id="ethnicity2" value="false">
 									I am not Hispanic/Latino
 								</label>
 							</div>
@@ -34,31 +34,31 @@
 							<label for="race">Race</label>&nbsp;&nbsp;&nbsp;<small class="text-warning">Check all that apply</small>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="race" id="race1" value="1">
+									<input type="checkbox" name="race" id="race1" value="AMERICAN_INDIAN_OR_ALASKA_NATIVE">
 									American Indian or Alaska Native
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="race" id="race2" value="2">
+									<input type="checkbox" name="race" id="race2" value="ASIAN">
 									Asian
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="race" id="race3" value="3">
+									<input type="checkbox" name="race" id="race3" value="BLACK_OR_AFRICAN_AMERICAN">
 									Black or African American
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="race" id="race4" value="4">
+									<input type="checkbox" name="race" id="race4" value="NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER">
 									Native Hawaiian or Other Pacific Islander
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="race" id="race5" value="5">
+									<input type="checkbox" name="race" id="race5" value="WHITE">
 									White
 								</label>
 							</div>
@@ -189,13 +189,13 @@
 					<div class="col-md-4">
 						<div class="form-group">
 							<label for="annualIncome">Annual Family Income</label>
-							$<input type="text" class="form-control" id="annualIncome" placeholder="12345">
+							$<input name="annualIncome" type="text" class="form-control" id="annualIncome" placeholder="12345">
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="form-group">
 							<label for="numSupportedByIncome"># of People Supported by Income</label>
-							<input type="text" class="form-control" id="numSupportedByIncome" placeholder="">
+							<input name="numSupportedByIncome" type="text" class="form-control" id="numSupportedByIncome" placeholder="">
 						</div>
 					</div>
 					<div class="col-md-4">

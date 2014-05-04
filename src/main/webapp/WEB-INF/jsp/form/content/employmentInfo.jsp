@@ -30,7 +30,7 @@
 													<label for="sundayHoursFrom">Sunday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="sundayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="sundayHoursFrom" name="sundayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -38,7 +38,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="sundayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="sundayHoursTo" name="sundayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -50,7 +50,7 @@
 													<label for="mondayHoursFrom">Monday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="mondayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="mondayHoursFrom" name="mondayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -58,7 +58,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="mondayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="mondayHoursTo" name="mondayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -70,7 +70,7 @@
 													<label for="tuesdayHoursFrom">Tuesday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="tuesdayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="tuesdayHoursFrom" name="tuesdayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -78,7 +78,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="tuesdayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="tuesdayHoursTo" name="tuesdayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -90,7 +90,7 @@
 													<label for="wednesdayHoursFrom">Wednesday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="wednesdayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="wednesdayHoursFrom" name="wednesdayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -98,7 +98,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="wednesdayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="wednesdayHoursTo" name="wednesdayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -110,7 +110,7 @@
 													<label for="thursdayHoursFrom">Thursday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="thursdayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="thursdayHoursFrom" name="thursdayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -118,7 +118,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="thursdayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="thursdayHoursTo" name="thursdayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -130,7 +130,7 @@
 													<label for="fridayHoursFrom">Friday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="fridayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="fridayHoursFrom" name="fridayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -138,7 +138,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="fridayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="fridayHoursTo" name="fridayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -150,7 +150,7 @@
 													<label for="saturdayHoursFrom">Saturday</label>
 													<br/>
 													<span class="label label-info">From</span>
-													<input type="text" class="form-control" id="saturdayHoursFrom" placeholder="">
+													<input type="text" class="form-control" id="saturdayHoursFrom" name="saturdayHoursFrom" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -158,7 +158,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<span class="label label-info">To</span>
-													<input type="text" class="form-control" id="saturdayHoursTo" placeholder="">
+													<input type="text" class="form-control" id="saturdayHoursTo" name="saturdayHoursTo" placeholder="">
 												</div>
 											</div>
 										</div>
@@ -174,7 +174,7 @@
 							<label for="skills">List out any skills you have:</label>
 							<br/>
 							<small class="text-muted">For example: Additional languages, CPR, First Aid, Guard Card, Driver's License, Car Insurance, Basic Computer Skills</small>
-							<textarea class="form-control" rows="3"></textarea>
+							<textarea name="skills" id="skills" class="form-control" rows="3"></textarea>
 						</div>
 					</div>
 				</div>
@@ -186,25 +186,25 @@
 							<small class="text-warning">Check all that apply</small>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="jobType" id="jobType1" value="1">
+									<input type="checkbox" name="jobType" id="jobType1" value="FULL_TIME">
 									Full-time
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name=jobType id="jobType2" value="2">
+									<input type="checkbox" name=jobType id="jobType2" value="PART_TIME">
 									Part-time
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="jobType" id="jobType3" value="3">
+									<input type="checkbox" name="jobType" id="jobType3" value="SEASONAL_TEMPORARY">
 									Seasonal/Temporary
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="jobType" id="jobType4" value="4">
+									<input type="checkbox" name="jobType" id="jobType4" value="WEEKENDS_ONLY">
 									Weekends Only
 								</label>
 							</div>
@@ -215,21 +215,21 @@
 							<label for="jobKind">What kinds of jobs are you interested in?</label>
 							<br/>
 							<small class="text-muted">For example: retail, construction, computers, etc</small>
-							<input type="text" class="form-control" id="permanentState" placeholder="">
+							<input id="jobKind" name="jobKind" type="text" class="form-control" id="permanentState" placeholder="">
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="form-group">
-							<label for="skills">What is your dream career?</label>
-							<textarea class="form-control" rows="3"></textarea>
+							<label for="dreamCareer">What is your dream career?</label>
+							<textarea id="dreamCareer" name="dreamCareer" class="form-control" rows="3"></textarea>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
-							<label for="skills">Do you think you might have any additional challenges that might make it difficult to find a job? Please explain.</label>
-							<textarea class="form-control" rows="3"></textarea>
+							<label for="additionalChallenges">Do you think you might have any additional challenges that might make it difficult to find a job? Please explain.</label>
+							<textarea id="additionalChallenges" name="additionalChallenges" class="form-control" rows="3"></textarea>
 						</div>
 					</div>
 				</div>
