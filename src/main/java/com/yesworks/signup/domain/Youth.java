@@ -82,6 +82,18 @@ public class Youth implements Serializable {
 	@OneToOne(mappedBy = "youth", targetEntity = Employment.class, cascade = CascadeType.ALL)
 	@JoinColumn(name = "YOUTH_ID")
 	private Employment employment;
+	
+	@OneToOne(mappedBy = "youth", targetEntity = Signature.class, cascade = CascadeType.ALL)
+	@JoinColumn(name = "YOUTH_ID")
+	private Signature signature;
+	
+	@OneToMany(targetEntity = Experience.class, cascade = CascadeType.ALL)
+	@JoinColumn(name = "YOUTH_ID")
+	private List<Experience> experience = new ArrayList<Experience>();
+
+	@OneToMany(targetEntity = Survey.class, cascade = CascadeType.ALL)
+	@JoinColumn(name = "YOUTH_ID")
+	private List<Survey> surveys = new ArrayList<Survey>();
 
 	public Long getId() {
 		return id;
@@ -193,6 +205,30 @@ public class Youth implements Serializable {
 
 	public void setEmployment(Employment employment) {
 		this.employment = employment;
+	}
+	
+	public Signature getSignature() {
+		return signature;
+	}
+
+	public void setSignature(Signature signature) {
+		this.signature = signature;
+	}
+	
+	public List<Experience> getExperience() {
+		return experience;
+	}
+
+	public void setExperience(List<Experience> experience) {
+		this.experience = experience;
+	}
+
+	public List<Survey> getSurveys() {
+		return surveys;
+	}
+
+	public void setSurveys(List<Survey> surveys) {
+		this.surveys = surveys;
 	}
 	
 }

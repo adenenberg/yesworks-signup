@@ -95,8 +95,8 @@
 							</div>
 							<div class="radio">
 								<label>
-									<input type="radio" name="livingSituation" id="livingSituation5" value="guardian">
-									Guardian: Relationship? ___ <!-- NEED TO INSERT TEXT FIELD -->
+									<input type="radio" name="livingSituation" id="livingSituation5" value="guardian" class="inlineInput">
+									Guardian: Relationship? <input type="text" class="form-control inlineInput inputWidth50" id="otherEducationalAttainment" placeholder="">
 								</label>
 							</div>
 							<div class="radio">
@@ -119,8 +119,8 @@
 							</div>
 							<div class="radio">
 								<label>
-									<input type="radio" name="livingSituation" id="livingSituation9" value="other">
-									Other: ___ <!-- NEED TO INSERT TEXT FIELD -->
+									<input type="radio" name="livingSituation" id="livingSituation9" value="other" class="inlineInput">
+									Other: <input type="text" class="form-control inlineInput inputWidth50" id="otherEducationalAttainment" placeholder="">
 								</label>
 							</div>
 						</div>
@@ -154,8 +154,8 @@
 							</div>
 							<div class="radio">
 								<label>
-									<input type="radio" name="financialSupporter" id="financialSupporter5" value="guardian">
-									Guardian: Relationship? ___ <!-- NEED TO INSERT TEXT FIELD -->
+									<input type="radio" name="financialSupporter" id="financialSupporter5" value="guardian" class="inlineInput">
+									Guardian: Relationship? <input type="text" class="form-control inlineInput inputWidth50" id="otherEducationalAttainment" placeholder="">
 								</label>
 							</div>
 							<div class="radio">
@@ -178,8 +178,8 @@
 							</div>
 							<div class="radio">
 								<label>
-									<input type="radio" name="financialSupporter" id="financialSupporter9" value="other">
-									Other: ___ <!-- NEED TO INSERT TEXT FIELD -->
+									<input type="radio" name="financialSupporter" id="financialSupporter9" value="other" class="inlineInput">
+									Other: <input type="text" class="form-control inlineInput inputWidth50" id="otherEducationalAttainment" placeholder="">
 								</label>
 							</div>
 						</div>

@@ -13,4 +13,10 @@ public class HomeController {
 		
 		return "/jsp/home";
 	}
+	
+	@RequestMapping("/finish")
+	public String finishPage(Model model) {
+		
+		return "/jsp/finish";
+	}
 }

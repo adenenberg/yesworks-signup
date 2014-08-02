@@ -54,9 +54,9 @@
 				<c:when test="${step eq 5}">
 					<%@ include file="/WEB-INF/jsp/form/content/employmentInfo.jsp"%>
 				</c:when>
-				<c:otherwise>
-				
-				</c:otherwise>
+				<c:when test="${step eq 6}">
+					<%@ include file="/WEB-INF/jsp/form/content/releaseInfo.jsp"%>
+				</c:when>
 			</c:choose>
 		</div>
 	</body>

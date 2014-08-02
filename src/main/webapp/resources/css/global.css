@@ -16,3 +16,11 @@ form label {
 #weeklyHours .col-md-1 {
 	width: 14.267777777777%;
 }
+
+.inlineInput {
+	display: inline-block !important;
+}
+
+.inputWidth50 {
+	width: 50%;
+}

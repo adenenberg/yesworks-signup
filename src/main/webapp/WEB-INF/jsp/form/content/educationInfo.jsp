@@ -139,8 +139,8 @@
 										<div class="col-md-12">
 											<div class="radio">
 												<label>
-													<input type="radio" name="educationalAttainment" id="educationalAttainment8" value="other">
-													Other: blah
+													<input type="radio" class="inlineInput" name="educationalAttainment" id="educationalAttainment8" value="other">
+													Other: <input type="text" class="form-control inlineInput inputWidth50" id="otherEducationalAttainment" placeholder="">
 												</label>
 											</div>
 										</div>
@@ -180,6 +180,10 @@
 				$j("#schoolYearsCompleted option:nth-child(3)").text("3");
 				$j("#schoolYearsCompleted option:nth-child(4)").text("4 or more");
 			}
+		});
+		
+		$j("#educationInfo form").on("change", "#otherEducationalAttainment", function(e) {
+			$j("#educationalAttainment8").val($j(e.target).val());
 		});
 	});
 </script>

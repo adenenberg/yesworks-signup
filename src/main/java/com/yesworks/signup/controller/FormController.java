@@ -13,6 +13,7 @@ import com.yesworks.signup.domain.Address;
 import com.yesworks.signup.domain.Background;
 import com.yesworks.signup.domain.Education;
 import com.yesworks.signup.domain.Employment;
+import com.yesworks.signup.domain.Signature;
 import com.yesworks.signup.domain.Youth;
 import com.yesworks.signup.service.YouthService;
 
@@ -38,7 +39,8 @@ public class FormController {
 	@RequestMapping(value = "/start", method = RequestMethod.POST)
 	public String savePersonalInformation(Youth youth, Model model) {
 		System.out.println("Name = " + youth.getFirstName());
-//		youthService.save(youth);
+		
+		//TODO: Encrypt SSN??????
 		
 		setMaxStep(model, 1);
 		model.addAttribute("youth", youth);
@@ -64,7 +66,6 @@ public class FormController {
 		Youth youth = (Youth) model.asMap().get("youth");
 		youth.setAddress(address);
 		address.setYouth(youth);
-//		youthService.save(youth);
 		
 		model.addAttribute("youth", youth);
 		
@@ -88,7 +89,6 @@ public class FormController {
 		Youth youth = (Youth) model.asMap().get("youth");
 		youth.setEducation(education);
 		education.setYouth(youth);
-//		youthService.save(youth);
 		
 		model.addAttribute("youth", youth);
 		
@@ -112,7 +112,6 @@ public class FormController {
 		Youth youth = (Youth) model.asMap().get("youth");
 		youth.setBackground(background);
 		background.setYouth(youth);
-//		youthService.save(youth);
 		
 		model.addAttribute("youth", youth);
 		
@@ -136,7 +135,6 @@ public class FormController {
 		Youth youth = (Youth) model.asMap().get("youth");
 		youth.setEmployment(employment);
 		employment.setYouth(youth);
-		youthService.save(youth);
 		
 		model.addAttribute("youth", youth);
 		
@@ -155,14 +153,16 @@ public class FormController {
 	}
 	
 	@RequestMapping(value = "/release", method = RequestMethod.POST)
-	public String saveReleaseInformation(Model model) {
+	public String saveReleaseInformation(Signature signature, Model model) {
 		
 		Youth youth = (Youth) model.asMap().get("youth");
+		youth.setSignature(signature);
+		signature.setYouth(youth);
 //		youthService.save(youth);
 		
 		setMaxStep(model, 6);
 		
-		return "redirect:/form/finish";
+		return "redirect:/survey/finance";
 	}
 	
 	private void setMaxStep(Model model, int currentStep) {
