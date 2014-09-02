@@ -158,11 +158,11 @@ public class FormController {
 		Youth youth = (Youth) model.asMap().get("youth");
 		youth.setSignature(signature);
 		signature.setYouth(youth);
-//		youthService.save(youth);
+		youthService.save(youth);
 		
 		setMaxStep(model, 6);
 		
-		return "redirect:/survey/finance";
+		return "redirect:/experience";
 	}
 	
 	private void setMaxStep(Model model, int currentStep) {

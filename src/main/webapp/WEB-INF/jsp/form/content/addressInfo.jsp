@@ -33,13 +33,9 @@
 							<input name="currentCity" type="text" class="form-control" id="currentCity" placeholder="Los Angeles">
 						</div>
 					</div>
-					<!-- ****************************** -->
-					<!-- TODO: FIX STATE TO BE SELECTOR -->
-					<!-- ****************************** -->
 					<div class="col-md-2">
 						<div class="form-group">
 							<label for="currentState">State</label>
-							<!-- <input type="text" class="form-control" id="currentState" placeholder=""> -->
 							<select name="currentState" class="form-control" id="currentState">
 								<option value="" selected>---</option>
 								<option value="AL">Alabama</option>
@@ -138,7 +134,6 @@
 					<div class="col-md-2">
 						<div class="form-group">
 							<label for="permanentState">State</label>
-							<!-- <input name="permanentState" type="text" class="form-control" id="permanentState" placeholder=""> -->
 							<select name="permanentState" class="form-control" id="permanentState">
 								<option value="" selected>---</option>
 								<option value="AL">Alabama</option>

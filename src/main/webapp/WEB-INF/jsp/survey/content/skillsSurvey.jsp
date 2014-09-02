@@ -10,7 +10,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<form id="financeSurveyForm" class="" role="form"> <!-- has-success has-feedback -->
+			<form id="skillsSurveyForm" class="" role="form"> <!-- has-success has-feedback -->
 				<table class="table table-striped table-bordered">
 					<tbody>
 						<tr>

@@ -12,6 +12,7 @@
 		<class>com.yesworks.signup.domain.Signature</class>
 		<class>com.yesworks.signup.domain.Survey</class>
 		<class>com.yesworks.signup.domain.Question</class>
+		<class>com.yesworks.signup.domain.Experience</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
