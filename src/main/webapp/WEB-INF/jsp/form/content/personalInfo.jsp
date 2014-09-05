@@ -44,12 +44,12 @@
 							<input name="birthDate" type="text" class="form-control" id="birthDate" placeholder="MM/DD/YYYY">
 						</div>
 					</div>
-					<div class="col-md-4">	
+<!-- 					<div class="col-md-4">	
 						<div class="form-group">
 							<label for="socialNumber">Last 4 Digits of Social Security #</label>
 							<input name="lastFourSocial" type="text" class="form-control" id="socialNumber" placeholder="XXXX">
 						</div>
-					</div>
+					</div> -->
 					<div class="col-md-4">
 						<div class="form-group">
 							<label for="gender">Gender</label>
