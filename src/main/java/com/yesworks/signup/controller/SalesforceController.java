@@ -64,7 +64,11 @@ public class SalesforceController {
 			kid.setMiddleInitial__c(youth.getMiddleInitial());
 			kid.setRefferedByOther__c(youth.getSignature().getReferral());
 			kid.setGender__c(youth.getGender().toString());
-			kid.setBirthdate__c(Calendar.getInstance(youth.getBirthDate()));
+			
+			Calendar birthDate = Calendar.getInstance();
+			birthDate.setTime(youth.getBirthDate());
+			
+			kid.setBirthdate__c(birthDate);
 			kid.setCurrentStreet__c(youth.getAddress().getCurrentAddressLine1() + " " + youth.getAddress().getCurrentAddressLine2());
 			kid.setCurrentCity__c(youth.getAddress().getCurrentCity());
 			kid.setCurrentState__c(youth.getAddress().getCurrentState());
@@ -75,7 +79,7 @@ public class SalesforceController {
 			kid.setPermanentPostalCode__c(youth.getAddress().getPermanentZipCode());
 			kid.setHomePhone__c(youth.getAddress().getHomePhone());
 			kid.setCellPhone__c(youth.getAddress().getCellPhone());
-			kid.setEmail__c();
+//			kid.setEmail__c();
 //			kid.setOtherPhone__c(youth.getAddress().getO);
 			
 //			kid.setMothersName__c();
@@ -89,7 +93,7 @@ public class SalesforceController {
 //			kid.setGuardiansEmail__c(GuardiansEmail__c);
 			
 			kid.setSchool__c(youth.getEducation().getSchoolName());
-			kid.setGradeCompleted__c(GradeCompleted__c);
+//			kid.setGradeCompleted__c(GradeCompleted__c);
 			kid.setDreamCareer__c(youth.getEmployment().getDreamCareer());
 //			kid.setEducationalAttainment__c(EducationalAttainment__c);
 			kid.setEducationalAttainmentOther__c(youth.getEducation().getEducationalAttainment());
@@ -97,18 +101,18 @@ public class SalesforceController {
 //			kid.setLivingArrangement__c();
 			kid.setLivingArrangementOther__c(youth.getBackground().getLivingSituation());
 //			kid.setFinanciallySupports__c(FinanciallySupports__c);
-			kid.setFinanciallySupportsOther__c(FinanciallySupportsOther__c);
-			kid.setCheckingAccount__c(CheckingAccount__c);
-			kid.setSavingsAccount__c(SavingsAccount__c);
-			kid.setMaritalStatus__c(MaritalStatus__c);
-			kid.setNumberChildren__c(NumberChildren__c);
-			kid.setNumberInHousehold__c(NumberInHousehold__c);
-			kid.setFamilyAnnualIncome__c(FamilyAnnualIncome__c);
-			kid.setEthnicity__c(Ethnicity__c);
-			kid.setRace__c(Race__c);
+			kid.setFinanciallySupportsOther__c(youth.getBackground().getFinancialSupporter());
+			kid.setCheckingAccount__c(youth.getBackground().hasCheckingAccount());
+			kid.setSavingsAccount__c(youth.getBackground().hasSavingsAccount());
+			kid.setMaritalStatus__c(youth.getMaritalStatus().toString());
+			kid.setNumberChildren__c((double) youth.getNumberOfChildren());
+//			kid.setNumberInHousehold__c(NumberInHousehold__c);
+			kid.setFamilyAnnualIncome__c(youth.getBackground().getAnnualIncome().doubleValue());
+//			kid.setEthnicity__c(youth.getBackground().g);
+			kid.setRace__c(youth.getBackground().getRace().toString());
 			kid.setSurveyDate__c(Calendar.getInstance());
-			kid.setFirstVisit__c(FirstVisit__c);
-			kid.setSignature__c(Signature__c);
+			kid.setFirstVisit__c(youth.getSignature().isFirstVisit());
+			kid.setSignature__c(youth.getSignature().isAcceptRelease());
 			kid.setKid_Id__c(99999d);
 			
 			SaveResult[] results = connection.create(new SObject[] { kid });
